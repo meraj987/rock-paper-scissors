@@ -6,7 +6,7 @@ function getComputerChoice() {
         return "Paper"
     else
         return "Scissors"
-// Return the randomOutput value
+    
   }
  
   function playRound(playerSelection, computerSelection){
