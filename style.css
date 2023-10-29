@@ -1,0 +1,323 @@
+body{
+    background-color: bisque;
+}
+
+
+
+.reset{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aqua;
+  background-color: blueviolet;
+  padding: 28px;
+  margin-left: 500px;
+}
+.display {
+  text-align: center;
+  padding: 20px;
+  background-color: #DEB887; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  margin: 40px;
+}
+
+.start {
+  text-decoration: underline;
+  font-size: 24px;
+  color: #0e071e;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.comment {
+  font-family:Papyrus;
+  font-size: 30px;
+  color: #800000;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.choice {
+  font-family: Monaco;
+  font-size: 18px;
+  color: #27ae60;
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #D2691E;
+  border-radius: 5px;
+  background-color: 	#FFEBCD;
+  font-weight: bold;
+}
+
+.result {
+  font-size: 24px;
+  color: #e74c3c;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+.result {
+  font-size: 20px;
+  color: #333;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+
+.rock{
+
+  outline: 0;
+  grid-gap: 8px;
+  align-items: center;
+  background-color:#d05228;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  flex-shrink: 0;
+  font-size: 16px;
+  gap: 8px;
+  justify-content: center;
+  line-height: 1.5;
+  overflow: hidden;
+  padding: 18px 70px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: all .14s ease-out;
+  white-space: nowrap;
+
+  &:hover {
+      box-shadow: 4px 4px 0 #000;
+      transform: translate(-4px,-4px);
+  }
+  &:focus-visible{
+      outline-offset: 1px;
+  }
+
+}
+
+.paper{
+  outline: 0;
+  grid-gap: 8px;
+  margin: 15px;
+  align-items: center;
+  background-color: 	#dfa927;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  flex-shrink: 0;
+  font-size: 16px;
+  gap: 8px;
+  justify-content: center;
+  line-height: 1.5;
+  overflow: hidden;
+  padding: 18px 70px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: all .14s ease-out;
+  white-space: nowrap;
+
+  &:hover {
+      box-shadow: 4px 4px 0 #000;
+      transform: translate(-4px,-4px);
+  }
+  &:focus-visible{
+      outline-offset: 1px;
+  }
+}
+.scissors{
+  outline: 0;
+  grid-gap: 8px;
+  margin: 15px;
+  align-items: center;
+  background-color: #e1bebe;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  flex-shrink: 0;
+  font-size: 16px;
+  gap: 8px;
+  justify-content: center;
+  line-height: 1.5;
+  overflow: hidden;
+  padding: 18px 70px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: all .14s ease-out;
+  white-space: nowrap;
+
+  &:hover {
+      box-shadow: 4px 4px 0 #000;
+      transform: translate(-4px,-4px);
+  }
+  &:focus-visible{
+      outline-offset: 1px;
+  }
+}
+
+.reset{
+
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 43%;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 10%;
+  will-change: transform;
+}
+
+.reset:disabled {
+  pointer-events: none;
+}
+
+.reset:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.reset:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+.title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  
+  .title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  
+  .title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+  /* Here are just some visual styles. 🖌 */
+  
+  .container {
+    display: grid;
+    place-items: center;  
+    text-align: center;
+    height: 100vh
+  }
+  
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 8.5vw;
+    text-transform: uppercase;
+  }
+  
+  
+  Resources.title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  
+  .title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+  /* Here are just some visual styles. 🖌 */
+  
+  .container {
+    display: grid;
+    place-items: center;  
+    text-align: center;
+    height: 20vh
+  }
+  
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 6.0vw;
+    text-transform: uppercase;
+  }
+  
+  

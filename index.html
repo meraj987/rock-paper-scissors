@@ -4,8 +4,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Function scope example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-<body>
+<body>  
+
+  <div class="container">
+    <h2 class="title">
+      <span class="title-word title-word-1">ROCK</span>
+      <span class="title-word title-word-2">PAPER</span>
+      <span class="title-word title-word-3">SCISSORS</span>
+    </h2>
+  </div>
+
+  <div class="display">
+    <div class="start">THE GAME IS ON! The First to Reach 5 points, wins the Game!</div>
+    <h2 class="comment"> The Round Begins In 3.. 2.. 1..</h2>
+    <div class = "choice"> Your Choice:   Computer Choice: </div><br>
+    <div class="result"> Player Wins: 0, Computer Wins: 0</div>
+  </div>
+  <div class="tabs">
+  <button class="rock" > <strong>ROCK</strong></button>
+  <button class="paper" > <strong>PAPER</strong></button>
+  <button class="scissors" > <strong>SCISSORS</strong></button>
+  </div>
+  <div>
+    <button class="reset">Play Again!</button>
+  </div>
   <script src="game.js"></script>
 </body>
 </html>
